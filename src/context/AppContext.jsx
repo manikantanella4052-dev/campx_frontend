@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const AppContext = createContext();
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://campx-backend-iv32.onrender.com/api";
 
 export const AppProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
